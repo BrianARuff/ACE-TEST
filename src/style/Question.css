@@ -1,0 +1,47 @@
+.question-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px
+}
+
+.question-text-container {
+    background: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 20px
+}
+
+.question-number {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 20px
+}
+
+.question-text {
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.check-group {
+    background: lightgray;
+    padding: 20px;
+    width: calc(100% - 40px);
+    text-align: center;
+}
+
+.check-group label {
+    font-weight: bold;
+}
+
+.check-group input[type="checkbox"] {
+    font-size: 24px;
+    background: red;
+    border: 1px solid red;
+    color: red;
+    padding: 25px;
+    margin: 25px;
+}
