@@ -1,16 +1,40 @@
 .App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 500px) {
+    .App {
+        display: block;
+    }
 }
 
 .score {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
-  background: rgba(0, 0, 0, 0.2);
-  border: solid black 3px;
-  padding: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.2);
+    border: solid #DDFFEE 3px;
+    border-radius: 3px;
+    padding: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+@media only screen and (max-width: 320px) {
+    .score {
+        top: 184px;
+        right: 25px;
+        border: 3px solid black;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
 }

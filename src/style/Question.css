@@ -1,18 +1,29 @@
 .question-container {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    padding: 20px
+    max-width: 100%;
+    width: 1200px;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .question-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .question-container {
+        display: block;
+        margin: 20px 0;
+    }
 }
 
 .question-text-container {
-    background: darkgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    padding: 20px
+    padding: 20px;
+    border: 1px solid black;
+    border-bottom: 0px;
 }
 
 .question-number {
@@ -27,10 +38,11 @@
 }
 
 .check-group {
-    background: lightgray;
     padding: 20px;
-    width: calc(100% - 40px);
     text-align: center;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
 .check-group label {
