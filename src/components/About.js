@@ -16,9 +16,9 @@ class About extends React.Component {
                     type="text/html"
 
                     src="https://www.youtube-nocookie.com/embed/ccKFkcfXx-c/&vq=hd720"
-                    frameborder="0"
+                    frameBorder="0"
                     allow="accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    allowFullScreen
                 />
                 <p className="about-paragraph">
                     Childhood experiences, both positive and negative, have a
